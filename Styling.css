@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+header h1 span{
+    color: green;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;  
+}
+ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+.header2{
+    background-color: #6ab344;
+    color: white;
+    text-align: center;
+    padding: 100px 30px;
+    height: 50vh;
+    margin-top: 50px;
+}
+.header2 h1{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 36px;
+}
+.header2 p{
+    margin: 10px 0 20px;
+    font-size: 16px;
+}
+.header2 .btn {
+    background-color: #f9a825;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+.section h2 {
+    color: #6ab344;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.section p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.advantages, .services, .portfolio, .process, .people, .skills, .contact {
+    background-color: white;
+    padding: 50px 0;
+}
+.advantages .advantage-item, .services .service-item, .portfolio .portfolio-item, .process .process-item, .people .people-item, .skills .skill-item {
+    display: inline-block;
+    width: 22%;
+    margin: 1%;
+    vertical-align: top;
+    text-align: center;
+}
+.advantages .advantage-item i, .services .service-item i, .process .process-item i, .people .people-item i, .skills .skill-item i {
+    font-size: 40px;
+    color: #6ab344;
+    margin-bottom: 10px;
+}
+.advantages .advantage-item h3, .services .service-item h3, .portfolio .portfolio-item h3, .process .process-item h3, .people .people-item h3, .skills .skill-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.advantages .advantage-item p, .services .service-item p, .portfolio .portfolio-item p, .process .process-item p, .people .people-item p, .skills .skill-item p {
+    font-size: 14px;
+    color: #666;
+}
+.about {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+.about .about-content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+.about .about-content h2 {
+    color: #6ab344;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.about .about-content p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.about .about-content .btn {
+    background-color: #f9a825;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.contact {
+    background-color: #6ab344;
+    color: white;
+    padding: 50px 0;
+}
+.contact .contact-content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+.contact .contact-content h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.contact .contact-content p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.contact .contact-content .btn {
+    background-color: #f9a825;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) { /* Small tablets and large mobile devices */
+    header {
+        flex-direction: column;
+    }
+
+    .header2 {
+        padding: 30px 20px;
+    }
+
+    .header2 h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .advantages .advantage-item, .services .service-item, .portfolio .portfolio-item, .process .process-item, .people .people-item, .skills .skill-item {
+        width: 100%;
+    }
+    
+    .about .about-content, .contact .contact-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+    .header2 {
+        padding: 20px 10px;
+    }
+
+    .header2 h1 {
+        font-size: 24px;
+    }
+
+    .header2 p, .section p {
+        font-size: 14px;
+    }
+
+    nav ul {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .about .about-content, .contact .contact-content {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
